@@ -35,10 +35,6 @@ public class Hilo extends Thread {
 		nivel--;
 	}
 	
-	private void print() {
-		this.servidor.print(s);
-	}
-	
 	private int N;
 	private int _N;
 	private int nivel;
