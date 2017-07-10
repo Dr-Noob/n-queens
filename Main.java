@@ -58,7 +58,7 @@ public class Main {
 		
 		System.out.println("[N=" + N + "][" + soluciones + " soluciones]");
 		long endTime = System.nanoTime();
-        System.out.println("Tiempo invertido: " + (float)(endTime - startTime)/1000000000 + " s");
+        	System.out.println("Tiempo invertido: " + (float)(endTime - startTime)/1000000000 + " s");
 		
 	}
 }
