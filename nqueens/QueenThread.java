@@ -1,6 +1,6 @@
-package reinas_concurrente;
+package nqueens;
 
-public class Hilo extends Thread {
+public class QueenThread extends Thread {
 	
 	private void generar() {
 		s[nivel]++;
@@ -41,9 +41,9 @@ public class Hilo extends Thread {
 	private int semilla;
 	private int[] s;
 	private long soluciones;
-	private Semilla servidor;
+	private Seed servidor;
 	
-	public Hilo(int semilla,int N,Semilla servidor) {
+	public QueenThread(int semilla,int N,Seed servidor) {
 		this.N = N;
 		this._N = this.N-1;
     	this.s = new int[N];
@@ -61,7 +61,7 @@ public class Hilo extends Thread {
 
 			do {
 				generar();
-				if(solucion()) { this.soluciones++; print(); }
+				if(solucion()) { this.soluciones++; }
 				if(criterio())nivel++;
 				else {
 					while(nivel > 0 && !masHermanos())retroceder();

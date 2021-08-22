@@ -1,11 +1,11 @@
-package reinas_concurrente;
+package nqueens;
 
-public class Semilla {
+public class Seed {
 
 	private int N;
 	private int semillasUsadas;
 	
-	public Semilla(int N, int ncores) {
+	public Seed(int N, int ncores) {
 		this.N = N;
 		this.semillasUsadas = ncores;
 	}
